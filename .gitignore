@@ -6,36 +6,21 @@ luac.out
 *.zip
 *.tar.gz
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+# Ignore VS Code workspace settings
+.vscode/
+*.code-workspace
 
-# Precompiled Headers
-*.gch
-*.pch
+# Ignore WoW Addon-specific temporary files
+*.luac  # Lua bytecode (not needed in Git)
+*.bak   # Backup files
+*.log   # Log files
+*.tmp   # Temporary files
+*.swp   # Swap files
+*.old   # Old versions
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+# Ignore system-specific files
+.DS_Store  # macOS metadata
+Thumbs.db  # Windows thumbnail cache
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+# Ignore GitHub Codespaces & editor-specific files
+.codespaces/
